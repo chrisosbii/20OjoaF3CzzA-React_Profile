@@ -1,0 +1,243 @@
+/** 
+ * Custom CSS Variables
+ */
+ :root {
+    /* Dark color variable */
+    --dark: #13293d;
+    /* light color variable (was #83EEFF) */
+    --light: #129cd8;
+    /* background color */
+    --background: #B2beb5;
+}
+
+/**
+ * CSS Universal Elements Area
+ */
+
+a {
+    color: var(--light);
+}
+
+body {
+    background-color: var(--background);
+}
+
+p {
+    font-size: 16px;
+    color: var(--dark);
+}
+h1{
+    color: var(--dark);
+    font-size: 48px;
+}
+h3{
+    font-size: medium;
+}
+
+/* Sets up the header object */
+header {
+    position: relative;
+    padding: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--dark);
+    color: var(--light);
+    height: 70px;
+}
+/* formate the h1 objects in headers to keep them in line and increase font size */
+header h1 {
+    position: absolute;
+    bottom: 10;
+    left: 0;
+    padding-left: 5%;
+    padding-right: 10px;
+    background-color: var(--light);
+    display: inline-block;
+}
+/* adjust the header's div objects padding, location, float, font style, and font size */
+header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+/* remove ul list types */
+header div ul {
+    list-style-type: none;
+}
+/* make the list inline and push away from the end of the edge */
+header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+/* difines padding, clear, font, and text slignment for universal footer objects*/
+footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+/**
+ * CSS Class Elements Area
+ */
+
+.parrot{
+    height: 28px;
+}
+/* Flex box sections definitions */
+.sectionFlex{
+    display: flex;
+    align-items: flex-start;
+    width: 95%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+/* Created box for title of section */
+.sectionBox{
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 25%;
+    padding: 10px;
+    margin: 5px;
+    align-content: right;
+}
+.sectionBox h1{
+    text-align: right;
+}
+/* Define content boxes to ensure there is a boarder on the left of the box */
+.contentBox{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+
+    height: auto;
+    width: 70%;
+    padding-left: 5%;
+    border-color: var(--dark);
+    border-width: 10px;
+    border-style: none none none solid;
+}
+/* add extra padding to p objexts here */
+.contentBox p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* remove ul list types */
+.contentBox ul {
+    list-style-type: none;
+    width: 100%;
+    text-align: center;
+}
+/* make the list inline and push away from the end of the edge */
+.contentBox ul li {
+    display: inline-flex;
+    padding: 5%;
+}
+.contentBox ul li a {
+    color: var(--dark);
+}
+
+/* Define boxes for work objects */
+/* add boarder and colors */
+.workBox {
+    position: relative;
+    border-color: var(--light);
+    border-width: 5px;
+    border-style: solid;
+    margin:1%;
+}
+/* make the images opaque */
+.workBox img{
+    opacity: 0.5
+}
+/* when hovered make images visible */
+.workBox img:hover{
+    opacity: 1.0;
+}
+
+/* for small boxes use this class */
+.smallWorkBox {
+    position: relative;
+    border-color: var(--light);
+    border-width: 5px;
+    border-style: solid;
+    margin:1%;
+    height: 200px;
+    width: 48%;
+}
+/* make the images opaque */
+.smallWorkBox img{
+    opacity: 0.5
+}
+/* when hovered make images visible */
+.smallWorkBox img:hover{
+    opacity: 1.0;
+}
+
+/* titles for work box use this class. Need z-index to remove it from opacity in the image */
+.workBoxTitle {
+    background-color: var(--light);
+    left: 0;
+    bottom: 10px;
+    position: absolute;
+    color: var(--dark);
+    padding: 10px;
+    opacity: 1.0;
+    z-index: 9;
+}
+
+/**
+ * CSS ID Elements Area
+ */
+
+#barImage {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("../images/blue_gray_background.jpg");
+    background-size: 100% 500px;
+    background-position-y: 0;
+    background-repeat: no-repeat;
+}
+
+/* defines the profile picture box */
+#profilePic {
+    position: absolute;
+    right: 5%;
+    top: 100px;
+    height: 250px;
+    width: auto;
+    border-color: var(--light);
+    border-width: 10px;
+    border-style: solid;
+    z-index: 9;
+}
+
+/**
+ * @media dimension changes go here
+ */
+
+@media screen and (max-width: 768px) {
+    h1{
+        font-size: 24px;
+    }
+    header div {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    header div ul li {
+        margin-left: 8px;
+        
+    }
+    .smallWorkBox {
+        position: relative;
+        border-color: var(--light);
+        border-width: 5px;
+        border-style: solid;
+        margin:1%;
+        height: 200px;
+        width: 100%;
+    }
+}
