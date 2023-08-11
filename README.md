@@ -23,6 +23,15 @@ Please run 'npm start' to start the application
     
 This is a single page React website which has 4 sections: About Me, Portfolio, Contact, and Resume
 
+[Live Link](https://chrisosbii.github.io/20OjoaF3CzzA-React_Profile/)
+
+![About Page]()
+
+![Portfolio Page]()
+
+![Contact Page]()
+
+![Resume Page]()
     
 ## Credits
     
@@ -38,3 +47,6 @@ This is a single page React website which has 4 sections: About Me, Portfolio, C
     
 ## Questions
 
+On signing up for Netlify my account got flagged and banned as soon as I created it. 
+
+In light of this I am trying to deploy a vite page to git pages
