@@ -12,7 +12,7 @@ export default function Portfolio() {
             <h1>
                 Portfolio:
             </h1>
-            <Box sx={{ display: 'flex', flexWrap: 'wrap' }}>
+            <Box sx={{ display: 'flex', flexWrap: 'wrap', justify:"center" }}>
                 <Card sx={{ minWidth: 500, padding: 5, margin: 2 }}>
                     <CardMedia
                         component="img"

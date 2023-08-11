@@ -1,6 +1,9 @@
+
 function NavTabs({ currentPage, handlePageChange }) {
     return (
-      <ul className="nav nav-tabs">
+      <ul className="nav nav-tabs" float="right">
+        <h2>Chris Osborne</h2>
+        
         <li className="nav-item">
           <a
             href="#about"
