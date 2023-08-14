@@ -50,3 +50,8 @@ This is a single page React website which has 4 sections: About Me, Portfolio, C
 On signing up for Netlify my account got flagged and banned as soon as I created it. 
 
 In light of this I am trying to deploy a vite page to git pages
+Steps to deploy to github pages that I found worked for me:
+1. Build the vite application: "npm run build"
+2. Test that the page loads as expected in the /rp/ endpoint: "npm run preview"
+3. Push the dist folder to a github branch: "git subtree push --prefix dist origin gh-pages"
+4. Make sure you select the branch "gh-pages" for deployment to github pages
