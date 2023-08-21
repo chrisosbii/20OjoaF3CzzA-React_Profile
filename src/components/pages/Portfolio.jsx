@@ -4,7 +4,8 @@ import dogParkPic from '../images/DogParkPic.png';
 import sparkPic from '../images/sparkPainting.png';
 import timerPic from '../images/timer.jpg';
 import fillerPic from '../images/filler.jpg';
-import filler2Pic from '../images/green_bars.jpg'
+import filler2Pic from '../images/green_bars.jpg';
+import stockPic from '../images/StockStockImage.jpg'
 
 export default function Portfolio() {
     return (
@@ -13,6 +14,38 @@ export default function Portfolio() {
                 Portfolio:
             </h1>
             <Box sx={{ display: 'flex', flexWrap: 'wrap', justify:"center" }}>
+                <Card sx={{ minWidth: 500, padding: 5, margin: 2 }}>
+                    <CardMedia
+                        component="img"
+                        height="200"
+                        image={stockPic}
+                        alt="Taking Stock"
+                        sx={{
+                            "@media screen and (max-width: 600px)": {
+                            height: "150px",
+                            },
+                        }}
+                    />
+                    <CardContent
+                        sx={{
+                            "@media screen and (max-width: 600px)": {
+                            paddingBottom: "20px",
+                            },
+                        }}
+                        >
+                        <Typography gutterBottom variant="h5" component="div">
+                            Taking Stock{" "}
+                        </Typography>
+                        <Typography variant="body2" color="text.secondary">
+                            This is a React and graphQL group project that stores profile data and allows users to view and favorite stocks
+                        </Typography>
+                    </CardContent>
+                    <CardActions>
+                        <Button size="small" href="https://sheltered-stream-34052-1bfa9fe7091b.herokuapp.com/">Live Link</Button>
+                        <Button size="small" href="https://github.com/chrisosbii/Taking_Stock">Github</Button>
+                    </CardActions>
+                </Card>
+
                 <Card sx={{ minWidth: 500, padding: 5, margin: 2 }}>
                     <CardMedia
                         component="img"
@@ -36,7 +69,7 @@ export default function Portfolio() {
                             Spark Concepts{" "}
                         </Typography>
                         <Typography variant="body2" color="text.secondary">
-                            This is a 
+                            This is an application which allows users to create and share ideas
 
                             GitHub Link: 
                         </Typography>
